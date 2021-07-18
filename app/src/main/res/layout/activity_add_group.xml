@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_home_32"
+            android:padding="10dp"
+            android:id="@+id/home"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_monetization_on_32"
+            android:padding="10dp"
+            android:id="@+id/billsbutt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Group"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:paddingBottom="10dp"
+        android:text="Add Group"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:maxLength="34"
+        android:hint="Enter in a name"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:hint="Enter Amount"
+        android:id="@+id/amount"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/background"
+        android:id="@+id/submit"/>
+</LinearLayout>
